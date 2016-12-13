@@ -3,8 +3,8 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>iHome——租房首选</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
@@ -18,6 +18,9 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -42,60 +45,41 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<style type="text/css">
-		/*.fixed{
-			position: fixed;
-			top: 0;
-			width: 100%;
-			margin: 0 auto;
-			left:0%;
-			z-index:9;
-		}*/
-		.iconimg{
-			display: table-cell;
-			vertical-align: middle;
-			height: 140px;
-			font-size: 40px;
-			line-height: 40px;
-			color: #fff;
-		}
-		.plpr{
-			padding-left: 8px;
-			padding-right: 8px;
-		}
-	</style>
+
 	</head>
 	<body>
+		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<!--导航-->
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">iHome.</a></div>
+					<div id="fh5co-logo"><a href="index.html">Shop.</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
 						<li class="has-dropdown">
-							<a href="product.html">首页</a>
+							<a href="product.html">Shop</a>
 							<ul class="dropdown">
-								<li><a href="single.html">加入我们</a></li>
+								<li><a href="single.html">Single Shop</a></li>
 							</ul>
 						</li>
+						<li><a href="about.html">About</a></li>
 						<li class="has-dropdown">
-							<a href="about.html">关于我们</a>
+							<a href="services.html">Services</a>
 							<ul class="dropdown">
-								<li><a href="single.html">帮助与服务</a></li>
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
 							</ul>
 						</li>
-						<li><a href="contact.html">联系我们</a></li>
-						<li><a href="contact.html">登录</a></li>
-						<li><a href="contact.html">注册</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-				<!--<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
 						<li class="search">
 							<div class="input-group">
@@ -107,75 +91,75 @@
 						</li>
 						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
 					</ul>
-				</div>-->
+				</div>
 			</div>
 			
 		</div>
-	</nav><!--导航结束-->
-	<!--轮播图-->
+	</nav>
+	
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
-			<ul class="slides" style="height: 800px;">
-			   	<li style="background-image: url(images/index/img_bg_7.jpg);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span class="price">￥800/月</span>
-			   						<h2>贝岗村</h2>
-			   						<p>远离城市的喧嚣，环海而居，位于广州大学城中山大学旁，徜徉在知识的海洋。</p>
-				   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">前往预订</a></p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/index/img_bg_2.jpg);">
-			   		<div class="container">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span class="price">￥530/月</span>
-			   						<h2>珠江新城</h2>
-			   						<p>广州天河CBD的主要组成部分，承担着广州总部经济核心的地位和责任，成为国际金融、贸易、商业、文娱、外事、行政和居住区。</p>
-				   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">前往预订</a></p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/index/img_bg_3.jpg);">
-			   		<div class="container">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span class="price">￥750/月</span>
-			   						<h2>凤凰新村</h2>
-			   						<p>涅槃重生的凤凰，总是需要先经过火焰的洗礼，褪去一身铅华。</p>
-				   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">前往预订</a></p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/index/img_bg_4.jpg);">
-			   		<div class="container">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span class="price">￥540/月</span>
-			   						<h2>古巴比伦</h2>
-			   						<p>四大文明古国发源地之一，热情而爽朗的爱琴海文明，好客的人们，欢迎着你的到来。</p>
-				   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">前往预订</a></p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
+			<ul class="slides">
+		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<span class="price">$800</span>
+		   						<h2>Alato Cabinet</h2>
+		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<span class="price">$530</span>
+		   						<h2>The Haluz Rocking Chair</h2>
+		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<span class="price">$750</span>
+		   						<h2>Alato Cabinet</h2>
+		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/img_bg_4.jpg);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<span class="price">$540</span>
+		   						<h2>The WW Chair</h2>
+		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
 		  	</ul>
 	  	</div>
-	</aside><!--轮播图结束-->
+	</aside>
 
 	<div id="fh5co-services" class="fh5co-bg-section">
 		<div class="container">
@@ -183,31 +167,31 @@
 				<div class="col-md-4 col-sm-4 text-center">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<img src="images/index/img_bg_6.jpg" class="iconimg"/>
+							<i class="icon-credit-card"></i>
 						</span>
-						<h3>告白气球</h3>
-						<p class="plpr">塞纳河畔，左岸的咖啡；我手一杯，品尝你的美，留下唇印的嘴。花店玫瑰，名字写错谁；告白气球，风吹到对街,微笑在天上飞。</p>
-						<p><a href="#" class="btn btn-primary btn-outline">了解更多</a></p>
+						<h3>Credit Card</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<img src="images/index/img_bg_5.jpg" class="iconimg"/>
+							<i class="icon-wallet"></i>
 						</span>
-						<h3>搁浅</h3>
-						<p class="plpr">久未放晴的天空，依旧留着你的笑容，哭过却无法掩埋歉疚。风筝在阴天搁浅，想念还在等待救援，我拉着线复习你给的温柔。</p>
-						<p><a href="#" class="btn btn-primary btn-outline">了解更多</a></p>
+						<h3>Save Money</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<img src="images/index/img_bg_7.png" class="iconimg"/>
+							<i class="icon-paper-plane"></i>
 						</span>
-						<h3>如果我们不曾相遇</h3>
-						<p class="plpr">如果我们从不曾相识，人间又如何运行？晒伤的脱皮，意外的雪景，与你相依的四季。苍狗又白云，身旁有了你，匆匆轮回又有何惧？</p>
-						<p><a href="#" class="btn btn-primary btn-outline">了解更多</a></p>
+						<h3>Free Delivery</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
 			</div>
@@ -217,15 +201,15 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>用心 精选</span>
-					<h2>优质房源</h2>
-					<p>圆圈勾勒成指纹，印在我的嘴唇。回忆苦涩的吻痕，是树根。春去秋来的茂盛，却遮住了黄昏。寒夜剩我一个人，等清晨。世间最毒的仇恨，是有缘却无分。可惜你从未心疼，我的笨。荒草丛生的青春，倒也过得安稳。代替你陪着我的，是年轮。</p>
+					<span>Cool Stuff</span>
+					<h2>Products.</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_10.jpg);">
+						<div class="product-grid" style="background-image:url(images/product-1.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -234,15 +218,15 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">美轮美奂</a></h3>
-							<span class="price">￥350</span>
+							<h3><a href="single.html">Hauteville Concrete Rocking Chair</a></h3>
+							<span class="price">$350</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_11.jpg);">
-							<span class="sale">推荐</span>
+						<div class="product-grid" style="background-image:url(images/product-2.jpg);">
+							<span class="sale">Sale</span>
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -251,14 +235,14 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">无与伦比</a></h3>
-							<span class="price">￥600</span>
+							<h3><a href="single.html">Pavilion Speaker</a></h3>
+							<span class="price">$600</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_9.jpg);">
+						<div class="product-grid" style="background-image:url(images/product-3.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -267,8 +251,8 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">不知道叫什么</a></h3>
-							<span class="price">￥780</span>
+							<h3><a href="single.html">Ligomancer</a></h3>
+							<span class="price">$780</span>
 						</div>
 					</div>
 				</div>
@@ -276,7 +260,7 @@
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_12.jpg);">
+						<div class="product-grid" style="background-image:url(images/product-4.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -285,14 +269,14 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">啦啦啦</a></h3>
-							<span class="price">￥800</span>
+							<h3><a href="single.html">Alato Cabinet</a></h3>
+							<span class="price">$800</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_13.jpg);">
+						<div class="product-grid" style="background-image:url(images/product-5.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -301,14 +285,14 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">佛洛里斯</a></h3>
-							<span class="price">￥100</span>
+							<h3><a href="single.html">Earing Wireless</a></h3>
+							<span class="price">$100</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/index/img_bg_14.jpg);">
+						<div class="product-grid" style="background-image:url(images/product-6.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -317,8 +301,8 @@
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">星巴克</a></h3>
-							<span class="price">￥960</span>
+							<h3><a href="single.html">Sculptural Coffee Table</a></h3>
+							<span class="price">$960</span>
 						</div>
 					</div>
 				</div>
@@ -326,7 +310,7 @@
 		</div>
 	</div>
 	
-	<!--<div id="fh5co-testimonial" class="fh5co-bg-section">
+	<div id="fh5co-testimonial" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -455,7 +439,7 @@
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -537,22 +521,5 @@
 	<script src="js/main.js"></script>
 
 	</body>
-	
-		
-	<script type="text/javascript">
-		$(function() {
-//			头部导航定位
-//			var navoffeset=$(".fh5co-nav").offset().top;
-//			console.log(navoffeset);
-//			$(window).scroll(function(){
-//				var scrollpos=$(window).scrollTop(); 
-//				if(scrollpos >= navoffeset){
-//					$(".fh5co-nav").addClass("fixed");
-//				}else{
-//					$(".fh5co-nav").removeClass("fixed");
-//				}
-//			});
-		});
-	</script>
 </html>
 
