@@ -160,13 +160,17 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav .menu-2 li a.cart span {
   position: relative;
 }
+.icon-message{
+  color: #C0C0C0;
+  font-size: 20px;	
+}
 .fh5co-nav .menu-2 li a.cart span small {
   position: absolute;
-  top: -20px;
-  right: -15px;
-  padding: 10px 6px;
+  top: -18px;
+  right: -12px;
+  padding: 9px 5px;
   line-height: 0;
-  font-size: 11px;
+  font-size: 10px;
   background: #d1c286;
   color: white;
   -webkit-border-radius: 50%;
@@ -314,7 +318,7 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 1000;
 }
 #fh5co-hero .flexslider .flex-control-nav li a {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: none;
   width: 12px;
   height: 12px;
@@ -322,7 +326,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
 }
 #fh5co-hero .flexslider .flex-direction-nav {
   display: none;
