@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>iHome——开始体验之旅</title>
+	<title>iHome——成为房东</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -38,6 +38,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -49,17 +50,22 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	
+	<style type="text/css">
+		.ihome-tabs .ihome-tab-content-wrap{
+			top: 0;
+		}
+	</style>
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="ihome-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
+	<nav class="ihome-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">iHome.</a></div>
+					<div id="ihome-logo"><a href="index.html">iHome.</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -97,7 +103,7 @@
 	</nav>
 
 	<!--轮播图-->
-	<aside id="fh5co-hero" class="js-fullheight">
+	<aside id="ihome-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides" style="height: 800px;">
 			   	<li style="background-image: url(images/index/img_bg_23.jpg);">
@@ -118,91 +124,94 @@
 		  	</ul>
 	  	</div>
 	</aside><!--轮播图结束-->
-	<div id="fh5co-product">
+	<div id="ihome-product">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="fh5co-tabs animate-box">
-						<ul class="fh5co-tab-nav">
+					<div class="ihome-tabs animate-box">
+						<ul class="ihome-tab-nav">
 							<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-file"></i></span><span class="hidden-xs">注册帐号开始出租</span></a></li>
 							<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-bar-graph"></i></span><span class="hidden-xs">房客找到您的房源并预订</span></a></li>
 							<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-star"></i></span><span class="hidden-xs">欢迎房客</span></a></li>
 						</ul>
 		
 						<!-- Tabs -->
-						<div class="fh5co-tab-content-wrap">
-		
-							<div class="fh5co-tab-content tab-content active" data-tab-content="1">
+						<div class="ihome-tab-content-wrap">
+							<div class="ihome-tab-content tab-content active" data-tab-content="1">
 								<div class="col-md-10 col-md-offset-1">
-									<span class="price">SRP: $350</span>
-									<h2>Hauteville Rocking Chair</h2>
-									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
-		
-									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
-		
+									<span class="price">注册验证通过后便可以开始出租</span>
+									<h2>如何出租你的房屋</h2>
+									<p>您将需要填写房源描述、拍摄及上传照片，并决定住宿价格。房源页面能够让房客对您的空间有一个大致的了解。</p>
 									<div class="row">
 										<div class="col-md-6">
-											<h2 class="uppercase">Keep it simple</h2>
-											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+											<h2 class="uppercase">自定义守则</h2>
+											<p>您可以为房源设置可订状态和制定《房屋守则》。出租控制条件和日历设置可以帮助您更轻松地出租。</p>
 										</div>
 										<div class="col-md-6">
-											<h2 class="uppercase">Less is more</h2>
-											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+											<h2 class="uppercase">帮助与服务</h2>
+											<p>出租过程中iHome会为您提供建议和帮助。从准备房源和选择价格、到理解根据当地法律您需要承担的责任，我们都有相应的工具和资源来帮助您。</p>
 										</div>
 									</div>
-		
+									<h2>我们会保护您的利益</h2>
+									<p>为了保护您和您的家，ihome会未雨绸缪，预先计划。</p>
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">房东保障险</h2>
+											<p>您的Airbnb帐户已自动包括房东保障险，如果房客受到伤害或者导致房源损坏，房东保障险将为您提供保护。</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">回报不仅仅是金钱</h2>
+											<p>除了可以赚取额外收入，房东更加入了一个相互支持的全球社区。他们随时都有机会从Airbnb社区以及其他房东身上学习到不少宝贵的知识。</p>
+										</div>
+									</div>
 								</div>
 							</div>
-		
-							<div class="fh5co-tab-content tab-content" data-tab-content="2">
+							<div class="ihome-tab-content tab-content" data-tab-content="2">
 								<div class="col-md-10 col-md-offset-1">
-									<h3>Product Specification</h3>
-									<ul>
-										<li>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius</li>
-										<li>adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi</li>
-										<li>Veritatis tenetur odio delectus quibusdam officiis est.</li>
-										<li>Magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</li>
-									</ul>
-									<ul>
-										<li>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius</li>
-										<li>adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi</li>
-										<li>Veritatis tenetur odio delectus quibusdam officiis est.</li>
-										<li>Magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</li>
-									</ul>
-								</div>
-							</div>
-		
-							<div class="fh5co-tab-content tab-content" data-tab-content="3">
-								<div class="col-md-10 col-md-offset-1">
-									<h3>Happy Buyers</h3>
+									<h3>房客找到您的房源并预订</h3>
 									<div class="feed">
 										<div>
 											<blockquote>
-												<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+												<p>通过在网站上或者应用发消息来了解房客，并解答他们的问题。</p>
 											</blockquote>
-											<h3>&mdash; Louie Knight</h3>
-											<span class="rate">
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-											</span>
 										</div>
 										<div>
 											<blockquote>
-												<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+												<p>有的房东会当面把钥匙交给房客，有的房东则会提供开门的密码。您可以选择对您来说最方便的方式。</p>
 											</blockquote>
-											<h3>&mdash; Joefrey Gwapo</h3>
-											<span class="rate">
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-											</span>
+										</div>
+										<div>
+											<blockquote>
+												<p>大多数房东会打扫所有房客将会使用的空间，并提供生活必需品，比如干净的床单、毛巾和卫生纸。</p>
+											</blockquote>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="ihome-tab-content tab-content" data-tab-content="3">
+								<div class="col-md-10 col-md-offset-1">
+									<h3>房客如何付款</h3>
+									<ul>
+										<li>房客在入住之前已经付款，iHome将会处理所有款项事宜，您并不用直接处理钱款。</li>
+									</ul>
+								</div>
+								<div class="col-md-10 col-md-offset-1">
+									<h3>您如何收到款项</h3>
+									<ul>
+										<li>您可以选择通过支付宝、微信钱包或者银行卡转账的形式来接收款项。系统会在房客入住24小时之后自动将款项汇给您，非常便捷。</li>
+									</ul>
+								</div>
+								<div class="col-md-10 col-md-offset-1">
+									<h3>收入和费用</h3>
+									<ul>
+										<li>在iHome上发布空间是免费的，iHome对每次预订收取3%的房东服务费。</li>
+									</ul>
+								</div>
+								<div class="col-md-10 col-md-offset-1">
+									<h3>收取的费用</h3>
+									<ul>
+										<li>收取多少费用全由您来决定。系统內有根据旅游趋势和同类房源价格来设置价格的工具，您注册之后就可以使用。</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -214,10 +223,10 @@
 	</div>
 	
 	
-	<div id="fh5co-about">
+	<div id="ihome-about">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center ihome-heading">
 					<span>现有用户</span>
 					<h2>看看那些房东们</h2>
 					<p>你会爱上这份工作，并爱上这个网站的。</p>
@@ -225,7 +234,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
+					<div class="ihome-staff">
 						<img src="images/person1.jpg" alt="Free HTML5 Templates by ">
 						<h3>史密斯·詹</h3>
 						<strong class="role">房东</strong>
@@ -233,7 +242,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
+					<div class="ihome-staff">
 						<img src="images/person2.jpg" alt="Free HTML5 Templates by ">
 						<h3>史密斯·詹</h3>
 						<strong class="role">房东</strong>
@@ -241,7 +250,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
+					<div class="ihome-staff">
 						<img src="images/person3.jpg" alt="Free HTML5 Templates by ">
 						<h3>史密斯·詹</h3>
 						<strong class="role">房东</strong>
@@ -252,15 +261,15 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo">
+	<footer id="ihome-footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
+				<div class="col-md-4 ihome-widget">
 					<h3>iHome.</h3>
 					<p>给你一个五星级的家</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">关于我们</a></li>
 						<li><a href="#">帮助与服务</a></li>
 						<li><a href="#">联系我们</a></li>
@@ -270,7 +279,7 @@
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">房源展示</a></li>
 						<li><a href="#">隐私保护</a></li>
 						<li><a href="#">用户评价</a></li>
@@ -280,7 +289,7 @@
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">寻找房东</a></li>
 						<li><a href="#">寻找房客</a></li>
 						<li><a href="#">团体租房</a></li>
@@ -296,7 +305,7 @@
 						<small class="block">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">iHome</a></small> 
 					</p>
 					<p>
-						<ul class="fh5co-social-icons">
+						<ul class="ihome-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>

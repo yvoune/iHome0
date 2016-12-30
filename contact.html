@@ -50,14 +50,14 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="ihome-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
+	<nav class="ihome-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">iHome.</a></div>
+					<div id="ihome-logo"><a href="index.html">iHome.</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -98,7 +98,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
+	<header id="ihome-header" class="ihome-cover ihome-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -114,12 +114,12 @@
 		</div>
 	</header>
 	
-	<div id="fh5co-contact">
+	<div id="ihome-contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-md-push-1 animate-box">
 					
-					<div class="fh5co-contact-info">
+					<div class="ihome-contact-info">
 						<h3>联系信息</h3>
 						<ul>
 							<!--<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>-->
@@ -178,10 +178,10 @@
 
 	<div id="map" class="animate-box" data-animate-effect="fadeIn"></div>
 
-	<div id="fh5co-started">
+	<div id="ihome-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center ihome-heading">
 					<h2>简报专栏</h2>
 					<p>心动不如马上行动，现在就前往预订吧！</p>
 				</div>
@@ -204,15 +204,15 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo">
+	<footer id="ihome-footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
+				<div class="col-md-4 ihome-widget">
 					<h3>iHome.</h3>
 					<p>给你一个五星级的家</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">关于我们</a></li>
 						<li><a href="#">帮助与服务</a></li>
 						<li><a href="#">联系我们</a></li>
@@ -222,7 +222,7 @@
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">房源展示</a></li>
 						<li><a href="#">隐私保护</a></li>
 						<li><a href="#">用户评价</a></li>
@@ -232,7 +232,7 @@
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
+					<ul class="ihome-footer-links">
 						<li><a href="#">寻找房东</a></li>
 						<li><a href="#">寻找房客</a></li>
 						<li><a href="#">团体租房</a></li>
@@ -248,7 +248,7 @@
 						<small class="block">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">iHome</a></small> 
 					</p>
 					<p>
-						<ul class="fh5co-social-icons">
+						<ul class="ihome-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -280,13 +280,48 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Google Map -->
-	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>-->
-	<script src="js/google_map.js"></script>
-
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script type="text/javascript">
+		function loadJScript() {
+			var script = document.createElement("script");
+			script.type = "text/javascript";
+			script.src = "http://api.map.baidu.com/api?v=1.4&callback=init";
+			document.body.appendChild(script);
+		}
+		function init() {
+			var map = new BMap.Map("map");            // 创建Map实例
+		//	var point = new BMap.Point(113.40509, 23.070205); // 创建点坐标
+		var point = new BMap.Point(113.40423,23.072142);
+		//	map.centerAndZoom(point,16);
+		//	map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+		
+		//	var local = new BMap.LocalSearch(map, {
+		//		renderOptions:{map: map}
+		//	});
+		//	local.search("广东省广州市番禺区广州大学城广东外语外贸大学");
+		
+		//	map.addEventListener("dragend", function(){    
+		//	 var center = map.getCenter();    
+		//	 alert("地图中心点变更为：" + center.lng + ", " + center.lat);    
+		//	});
+		
+			// 创建地址解析器实例
+		//	var myGeo = new BMap.Geocoder();
+		//	// 将地址解析结果显示在地图上,并调整地图视野
+		//	myGeo.getPoint("广东省广州市番禺区广州大学城广东外语外贸大学图书馆", function(point){
+		//		if (point) {
+					map.centerAndZoom(point, 16);
+					map.addOverlay(new BMap.Marker(point));
+		//			alert('您的位置：'+point.lng+','+point.lat);
+		//		}else{
+		//			alert("您选择地址没有解析到结果!");
+		//		}
+		//	}, "北京市");
+		//	
+		}  
+		window.onload = loadJScript;  //异步加载地图
+	</script>
 	</body>
 </html>
 

@@ -5,13 +5,13 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#ihome-offcanvas, .js-ihome-nav-toggle");
+	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-ihome-nav-toggle').removeClass('active');
+    			$('.js-fh5co-nav-toggle').removeClass('active');
 				
 	    	}
 	    
@@ -24,15 +24,15 @@
 
 	var offcanvasMenu = function() {
 
-		$('#page').prepend('<div id="ihome-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-ihome-nav-toggle ihome-nav-toggle ihome-nav-white"><i></i></a>');
+		$('#page').prepend('<div id="fh5co-offcanvas" />');
+		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
-		$('#ihome-offcanvas').append(clone1);
+		$('#fh5co-offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
-		$('#ihome-offcanvas').append(clone2);
+		$('#fh5co-offcanvas').append(clone2);
 
-		$('#ihome-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#ihome-offcanvas')
+		$('#fh5co-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		$('#fh5co-offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
 
@@ -59,7 +59,7 @@
 			if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-ihome-nav-toggle').removeClass('active');
+    			$('.js-fh5co-nav-toggle').removeClass('active');
 				
 	    	}
 		});
@@ -68,7 +68,7 @@
 
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-ihome-nav-toggle', function(event){
+		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 
 
@@ -147,21 +147,21 @@
 	var tabs = function() {
 
 		// Auto adjust height
-		$('.ihome-tab-content-wrap').css('height', 0);
+		$('.fh5co-tab-content-wrap').css('height', 0);
 		var autoHeight = function() {
 
 			setTimeout(function(){
 
-				var tabContentWrap = $('.ihome-tab-content-wrap'),
-					tabHeight = $('.ihome-tab-nav').outerHeight(),
+				var tabContentWrap = $('.fh5co-tab-content-wrap'),
+					tabHeight = $('.fh5co-tab-nav').outerHeight(),
 					formActiveHeight = $('.tab-content.active').outerHeight(),
 					totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
 					tabContentWrap.css('height', totalHeight );
 
 				$(window).resize(function(){
-					var tabContentWrap = $('.ihome-tab-content-wrap'),
-						tabHeight = $('.ihome-tab-nav').outerHeight(),
+					var tabContentWrap = $('.fh5co-tab-content-wrap'),
+						tabHeight = $('.fh5co-tab-nav').outerHeight(),
 						formActiveHeight = $('.tab-content.active').outerHeight(),
 						totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
@@ -176,7 +176,7 @@
 
 
 		// Click tab menu
-		$('.ihome-tab-nav a').on('click', function(event){
+		$('.fh5co-tab-nav a').on('click', function(event){
 			
 			var $this = $(this),
 				tab = $this.data('tab');
@@ -184,14 +184,14 @@
 			$('.tab-content')
 				.addClass('animated-fast fadeOutDown');
 
-			$('.ihome-tab-nav li').removeClass('active');
+			$('.fh5co-tab-nav li').removeClass('active');
 			
 			$this
 				.closest('li')
 					.addClass('active')
 
 			$this
-				.closest('.ihome-tabs')
+				.closest('.fh5co-tabs')
 					.find('.tab-content[data-tab-content="'+tab+'"]')
 					.removeClass('animated-fast fadeOutDown')
 					.addClass('animated-fast active fadeIn');
@@ -232,7 +232,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".ihome-loader").fadeOut("slow");
+		$(".fh5co-loader").fadeOut("slow");
 	};
 
 	var counter = function() {
@@ -244,8 +244,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#ihome-counter').length > 0 ) {
-			$('#ihome-counter').waypoint( function( direction ) {
+		if ($('#fh5co-counter').length > 0 ) {
+			$('#fh5co-counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					
@@ -257,7 +257,7 @@
 
 	var sliderMain = function() {
 		
-	  	$('#ihome-hero .flexslider').flexslider({
+	  	$('#fh5co-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
 			directionNav: true,
@@ -276,9 +276,9 @@
 
 	  	});
 
-	  	$('#ihome-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
 	  	$(window).resize(function(){
-	  		$('#ihome-hero .flexslider .slides > li').css('height', $(window).height());	
+	  		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
 	  	});
 
 	};
