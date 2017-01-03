@@ -2,3 +2,11 @@
 #ihome-product .ihome-tab-content-wrap {
   height: 650px !important;
 }
+.whiteFont {
+  color: white;
+}
+.whiteFont:focus,
+.whiteFont:hover,
+.whiteFont:active {
+  color: white;
+}

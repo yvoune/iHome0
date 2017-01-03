@@ -1,20 +1,19 @@
-//#ihome-testimonial,
-//#ihome-started,
-//#ihome-about{
-//  padding-bottom: 5em;
-//}
-//#ihome-product,
-//#ihome-testimonial{
-//  margin-right: 10px;
-//}
-//
-//#ihome-counter{
-//  .row{
-//      margin-right: 0px;
-//  }
-//}
+@basecolor: #d1c286;
+.transition(@time:0.5s) {
+    -webkit-transition: @time;
+    -o-transition: @time;
+    transition: @time;
+}
+
 #ihome-product{
     .ihome-tabs,.ihome-tab-content-wrap{
         height: 650px !important;
     }
+}
+
+.whiteFont{
+    color: white;
+    &:focus,&:hover,&:active{
+        color: white;
+    }    
 }
