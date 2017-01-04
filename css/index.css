@@ -1,5 +1,5 @@
-#ihome-product .ihome-tabs,
-#ihome-product .ihome-tab-content-wrap {
+.ihome-product .ihome-tabs,
+.ihome-product .ihome-tab-content-wrap {
   height: 650px !important;
 }
 .whiteFont {
@@ -9,4 +9,7 @@
 .whiteFont:hover,
 .whiteFont:active {
   color: white;
+}
+#details .product-carousel {
+  margin-bottom: 4em;
 }

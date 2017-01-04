@@ -29,14 +29,14 @@ body {
     color: #828282;
     background: #fff;
 }
-#page {
+.page {
     position: relative;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
     .transition();
 }
-.offcanvas #page {
+.offcanvas .page {
     overflow: hidden;
     position: absolute;
     &:after {
@@ -99,7 +99,7 @@ figure {
     }
 }
 .ihome-nav {
-    #ihome-logo {
+    .ihome-logo {
         font-size: 20px;
         margin: 0;
         padding: 0;
@@ -290,7 +290,7 @@ figure {
     color: #C0C0C0;
     font-size: 20px;
 }
-#ihome-hero {
+.ihome-hero {
     min-height: 700px;
     background: #fff url("../images/loader.gif") no-repeat center center;
     .btn {
@@ -373,12 +373,12 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-hero .flexslider .slider-text > .slider-text-inner h2 {
+    .ihome-hero .flexslider .slider-text > .slider-text-inner h2 {
         font-size: 40px;
     }
 }
-#ihome-header,
-#ihome-counter,
+.ihome-header,
+.ihome-counter,
 .ihome-bg {
     background-size: cover;
     background-position: top center;
@@ -393,10 +393,10 @@ figure {
     float: left;
     position: relative;
 }
-#ihome-counter {
+.ihome-counter {
     height: 500px;
 }
-#ihome-counter {
+.ihome-counter {
     .display-t,
     .display-tc {
         height: 500px;
@@ -405,7 +405,7 @@ figure {
     }
 }
 @media screen and (max-width: 992px) {
-    #ihome-counter {
+    .ihome-counter {
         height: inherit;
         padding: 7em 0;
         .display-t,
@@ -415,7 +415,7 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-counter {
+    .ihome-counter {
         height: inherit;
         padding: 7em 0;
         .display-t,
@@ -587,8 +587,8 @@ figure {
         }
     }
 }
-#ihome-header,
-#ihome-counter,
+.ihome-header,
+.ihome-counter,
 .ihome-cover {
     .display-tc {
         display: table-cell !important;
@@ -644,8 +644,8 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-header,
-    #ihome-counter,
+    .ihome-header,
+    .ihome-counter,
     .ihome-cover {
         .display-tc {
             h1 {
@@ -654,7 +654,7 @@ figure {
         }
     }
 }
-#ihome-counter {
+.ihome-counter {
     text-align: center;
     .counter {
         font-size: 50px;
@@ -695,34 +695,34 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-counter .feature-center {
+    .ihome-counter .feature-center {
         margin-bottom: 50px;
     }
 }
 .ihome-bg-section {
     background: rgba(0, 0, 0, 0.05);
 }
-#ihome-services,
-#ihome-started,
-#ihome-testimonial,
-#ihome-started,
-#ihome-product,
-#ihome-about,
-#ihome-contact,
-#ihome-footer {
+.ihome-services,
+.ihome-started,
+.ihome-testimonial,
+.ihome-started,
+.ihome-product,
+.ihome-about,
+.ihome-contact,
+.ihome-footer {
 //  padding: 5em 0 1em;
     padding: 5em 0;
     clear: both;
 }
 @media screen and (max-width: 768px) {
-    #ihome-services,
-    #ihome-started,
-    #ihome-testimonial,
-    #ihome-started,
-    #ihome-product,
-    #ihome-about,
-    #ihome-contact,
-    #ihome-footer {
+    .ihome-services,
+    .ihome-started,
+    .ihome-testimonial,
+    .ihome-started,
+    .ihome-product,
+    .ihome-about,
+    .ihome-contact,
+    .ihome-footer {
         padding: 3em 0;
     }
 }
@@ -1007,7 +1007,7 @@ figure {
         font-family: "Montserrat", Arial, sans-serif;
     }
 }
-#ihome-testimonial {
+.ihome-testimonial {
     background: #efefef;
     .testimony-slide {
         text-align: center;
@@ -1054,11 +1054,11 @@ figure {
     }
 }
 @media screen and (max-width: 992px) {
-    #ihome-testimonial .testimony-slide blockquote {
+    .ihome-testimonial .testimony-slide blockquote {
         width: 100%;
     }
 }
-#ihome-started {
+.ihome-started {
     background: #d1c286;
     .ihome-heading {
         h2 {
@@ -1107,7 +1107,7 @@ figure {
         }
     }
 }
-#ihome-footer {
+.ihome-footer {
     background: #efefef;
     .ihome-footer-links {
         padding: 0;
@@ -1140,7 +1140,7 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-footer .ihome-widget {
+    .ihome-footer .ihome-widget {
         text-align: left;
     }
 }
@@ -1158,7 +1158,7 @@ figure {
         height: 200px;
     }
 }
-#ihome-offcanvas {
+.ihome-offcanvas {
     position: absolute;
     z-index: 1901;
     width: 270px;
@@ -1295,11 +1295,11 @@ figure {
     }
 }
 @media screen and (max-width: 768px) {
-    #ihome-offcanvas {
+    .ihome-offcanvas {
         display: block;
     }
 }
-.offcanvas #ihome-offcanvas {
+.offcanvas .ihome-offcanvas {
     -moz-transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);

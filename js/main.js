@@ -5,7 +5,7 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#ihome-offcanvas, .js-ihome-nav-toggle");
+	    var container = $(".ihome-offcanvas, .js-ihome-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas') ) {
@@ -24,15 +24,15 @@
 
 	var offcanvasMenu = function() {
 
-		$('#page').prepend('<div id="ihome-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-ihome-nav-toggle ihome-nav-toggle ihome-nav-white"><i></i></a>');
+		$('.page').prepend('<div class="ihome-offcanvas" />');
+		$('.page').prepend('<a href="#" class="js-ihome-nav-toggle ihome-nav-toggle ihome-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
-		$('#ihome-offcanvas').append(clone1);
+		$('.ihome-offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
-		$('#ihome-offcanvas').append(clone2);
+		$('.ihome-offcanvas').append(clone2);
 
-		$('#ihome-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#ihome-offcanvas')
+		$('.ihome-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		$('.ihome-offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
 
@@ -244,8 +244,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#ihome-counter').length > 0 ) {
-			$('#ihome-counter').waypoint( function( direction ) {
+		if ($('.ihome-counter').length > 0 ) {
+			$('.ihome-counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					
@@ -257,9 +257,10 @@
 
 	var sliderMain = function() {
 		
-	  	$('#ihome-hero .flexslider').flexslider({
+	  	$('.ihome-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
+			slideshow: true,
 			directionNav: true,
 			start: function(){
 				setTimeout(function(){
@@ -276,9 +277,9 @@
 
 	  	});
 
-	  	$('#ihome-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	$('.ihome-hero .flexslider .slides > li').css('height', $(window).height());	
 	  	$(window).resize(function(){
-	  		$('#ihome-hero .flexslider .slides > li').css('height', $(window).height());	
+	  		$('.ihome-hero .flexslider .slides > li').css('height', $(window).height());	
 	  	});
 
 	};
@@ -291,10 +292,24 @@
 			loop: true,
 			margin: 0,
 			nav: false,
+	        slideSpeed: 500,
+		    paginationSpeed: 500,
 			dots: true,
 			smartSpeed: 800,
-			autoHeight: true
+			autoHeight: true,
+			autoPlay: true,
+			autoplayTimeout:1000,
+			beforeInit: function(elem){
+	            random(elem);
+	        }
 		});
+		function random(owlSelector){
+	        owlSelector.children().sort(function(){
+	            return Math.round(Math.random()) - 0.5;
+	        }).each(function(){
+	            $(this).appendTo(owlSelector);
+	        });
+	    }
 
 	};
 
