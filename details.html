@@ -1,52 +1,54 @@
 <!DOCTYPE HTML>
 <html>
+
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>iHome——房间详情页</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>iHome——房间详情页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:description" content="" />
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
 
-	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
 
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+		<!-- Flexslider  -->
+		<link rel="stylesheet" href="css/flexslider.css">
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Owl Carousel  -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	</head>
+
 	<body>
 		<div class="ihome-loader"></div>
 
@@ -55,7 +57,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-xs-2">
-							<div class="ihome-logo"><a href="index.html">iHome.</a></div>
+							<div class="ihome-logo">
+								<a href="index.html">iHome.</a>
+							</div>
 						</div>
 						<div class="col-md-6 col-xs-6 text-center menu-1">
 							<ul>
@@ -166,7 +170,8 @@
 							<div class="row animate-box">
 								<div class="col-md-8 col-md-offset-2 text-center ">
 									<p>
-										<a href="#" class="btn btn-primary btn-outline">添加预订</a>
+										<a type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#bookRoom">添加预订</a>
+										<!--<a href="#" class="btn btn-primary btn-outline">添加预订</a>-->
 										<a href="#" class="btn btn-primary btn-outline">联系房东</a>
 									</p>
 								</div>
@@ -270,31 +275,61 @@
 						</div>
 						<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 							<ul class="ihome-footer-links">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Help</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Meetups</a></li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Help</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+								<li>
+									<a href="#">Terms</a>
+								</li>
+								<li>
+									<a href="#">Meetups</a>
+								</li>
 							</ul>
 						</div>
 
 						<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 							<ul class="ihome-footer-links">
-								<li><a href="#">Shop</a></li>
-								<li><a href="#">Privacy</a></li>
-								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">Handbook</a></li>
-								<li><a href="#">Held Desk</a></li>
+								<li>
+									<a href="#">Shop</a>
+								</li>
+								<li>
+									<a href="#">Privacy</a>
+								</li>
+								<li>
+									<a href="#">Testimonials</a>
+								</li>
+								<li>
+									<a href="#">Handbook</a>
+								</li>
+								<li>
+									<a href="#">Held Desk</a>
+								</li>
 							</ul>
 						</div>
 
 						<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 							<ul class="ihome-footer-links">
-								<li><a href="#">Find Designers</a></li>
-								<li><a href="#">Find Developers</a></li>
-								<li><a href="#">Teams</a></li>
-								<li><a href="#">Advertise</a></li>
-								<li><a href="#">API</a></li>
+								<li>
+									<a href="#">Find Designers</a>
+								</li>
+								<li>
+									<a href="#">Find Developers</a>
+								</li>
+								<li>
+									<a href="#">Teams</a>
+								</li>
+								<li>
+									<a href="#">Advertise</a>
+								</li>
+								<li>
+									<a href="#">API</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -306,10 +341,18 @@
 							</p>
 							<p>
 								<ul class="ihome-social-icons">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									<li>
+										<a href="#"><i class="icon-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="icon-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="icon-linkedin"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="icon-dribbble"></i></a>
+									</li>
 								</ul>
 							</p>
 						</div>
@@ -317,6 +360,42 @@
 
 				</div>
 			</footer>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="bookRoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">房间预订</h4>
+					</div>
+					<div class="modal-body">
+						<form action="#" method="">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<label for="beginRentTime">开始入住时间</label>
+									<input type="datetime-local" name="beginRentTime" id="beginRentTime" class="form-control" />
+								</div>
+								<div class="col-md-6">
+									<label for="endRentTime">结束入住时间</label>
+									<input type="datetime-local" name="endRentTime" id="endRentTime" class="form-control" />
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="peopelIn">入住人数</label>
+									<input type="number" class="form-control" name="peopelIn" id="peopelIn" min="1" value="1"/>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary sureBook" data-dismiss="modal">确定预订</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="gototop js-top">
@@ -341,5 +420,5 @@
 		<script src="js/main.js"></script>
 		<script src="js/map.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-</html>
 
+</html>

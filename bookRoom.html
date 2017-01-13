@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>iHome——预定房间</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:description" content="" />
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<!-- Flexslider 轮播图的页数导航 -->
+		<link rel="stylesheet" href="css/flexslider.css">
+
+		<!-- Owl Carousel 计数区域及手机端缩进导航 -->
+		<!--<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<!--图片插件-->
+		<link rel="stylesheet" type="text/css" href="css/ssi-uploader.min.css"/>
+		<!-- Modernizr JS 滑动样式-->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="ihome-loader"></div>
+
+		<div class="page">
+		<nav class="ihome-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-xs-2">
+						<div class="ihome-logo"><a href="index.html">iHome.</a></div>
+					</div>
+					<div class="col-md-6 col-xs-6 text-center menu-1">
+						<ul>
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="has-dropdown open">
+								<a href="beOwner.html">我是房东</a>
+								<ul class="dropdown">
+									<li>
+										<a href="publishing.html">发布房源</a>
+									</li>
+									<li>
+										<a href="details.html">房间详情预览</a>
+									</li>
+									<li>
+										<a href="about.html">关于我们</a>
+									</li>
+									<li>
+										<a href="contact.html">联系我们</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="beOwner.html">预订房间</a>
+							</li>
+							<li class="has-dropdown open">
+								<a href="services.html">帮助与服务</a>
+								<ul class="dropdown">
+									<li>
+										<a href="single.html">我是房东</a>
+									</li>
+									<li>
+										<a href="single.html">我是房客</a>
+									</li>
+									<li>
+										<a href="about.html">关于我们</a>
+									</li>
+									<li>
+										<a href="contact.html">联系我们</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="login.html">登录</a>
+							</li>
+							<li>
+								<a href="register.html">注册</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+						<ul>
+							<li class="search">
+								<div class="input-group">
+									<input type="text" placeholder="搜索..">
+									<span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+						      </span>
+								</div>
+							</li>
+							<li class="shopping-cart">
+								<a href="#" class="cart"><span><small>0</small><i class="icon-message"></i></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<header class="ihome-header ihome-cover ihome-cover-sm" role="banner" style="background-image:url(images/index/img_bg_21.png);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1>房间预订</h1>
+								<h2></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="ihome-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-2  animated fadeInUp">
+						<h3>发布房源</h3>
+						<form action="#" method="">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<label for="beginRentTime">开始出租时间</label>
+									<input type="datetime-local" name="beginRentTime" id="beginRentTime" class="form-control" />
+								</div>
+								<div class="col-md-6">
+									<label for="endRentTime">结束出租时间</label>
+									<input type="datetime-local" name="endRentTime" id="endRentTime" class="form-control" />
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-6">
+									<label for="rents">租金</label>
+									<input type="text" name="rents" id="rents" class="form-control"/>
+								</div>
+								<div class="col-md-6">
+									<label for="perRents">单位</label>
+									<select name="perRents" class="form-control">
+										<option value="day">元/日</option>
+										<option value="month">元/月</option>
+										<option value="year">元/年</option>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="peopelIn">可入住人数</label>
+									<input type="number" class="form-control" name="peopelIn" id="peopelIn" min="1" value="1"/>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									 <label for="address">地址</label>
+									<input type="text" id="address" class="form-control" name="address" placeholder="地址">
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="subscribe">房间描述</label>
+									<textarea name="subscribe" id="subscribe" cols="20" rows="5" class="form-control" placeholder="描述下您的房间吧..."></textarea>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="ssi-upload">上传房间图片</label>
+									<input type="file" multiple id="ssi-upload" name="imgs"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="保存房源信息" class="btn btn-outline">
+								<input type="submit" value="提交房源信息" class="btn btn-success">
+								<!--<input type="button" value="前往预览" class="btn btn-success">-->
+								<button class="btn btn-success"><a href="preview.html" class="whiteFont">前往预览</a></button>
+							</div>
+						</form>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="ihome-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-4 ihome-widget">
+						<h3>iHome.</h3>
+						<p>给你一个五星级的家</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<ul class="ihome-footer-links">
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">帮助与服务</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">条款协议</a></li>
+							<li><a href="#">社区沙龙</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<ul class="ihome-footer-links">
+							<li><a href="#">房源展示</a></li>
+							<li><a href="#">隐私保护</a></li>
+							<li><a href="#">用户评价</a></li>
+							<li><a href="#">使用指南</a></li>
+							<li><a href="#">网站地图</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<ul class="ihome-footer-links">
+							<li><a href="#">寻找房东</a></li>
+							<li><a href="#">寻找房客</a></li>
+							<li><a href="#">团体租房</a></li>
+							<li><a href="#">宣传通知</a></li>
+							<li><a href="#">个人中心</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">iHome</a></small>
+						</p>
+						<p>
+							<ul class="ihome-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		</div>
+
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		</div>
+	</body>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<!--<script src="js/jquery.countTo.js"></script>-->
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="js/ssi-uploader.js" type="text/javascript" charset="utf-8"></script>
+</html>
