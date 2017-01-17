@@ -250,5 +250,12 @@
 		counterWayPoint();
 		sliderMain();
 		testimonialCarousel();
+
+		//确认框
+		$('.sureBook').click(function(e) {
+//			this.append("<div><span>已预订</span></div>")
+		})
+
+
 	});
 }());
